@@ -9,7 +9,7 @@ const PORT  = process.env.PORT
 
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/urlshorts')
+mongoose.connect('mongodb+srv://budgetbuddy:7875@cluster1.umwlezh.mongodb.net/BudgetBuddy-db?retryWrites=true&w=majority')
 
 const db = mongoose.connection;
 
@@ -19,9 +19,6 @@ db.on('error',()=>{
 db.once('open',()=>{
     console.log("Connected");
 })
-
-
-
 
 app.set('view engine' ,'ejs')
 app.use(express.static('public'))
