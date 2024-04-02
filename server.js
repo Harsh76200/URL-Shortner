@@ -9,7 +9,7 @@ const PORT  = process.env.PORT
 
 
 
-mongoose.connect('mongodb+srv://budgetbuddy:7875@cluster1.umwlezh.mongodb.net/BudgetBuddy-db?retryWrites=true&w=majority')
+mongoose.connect(process.env.MONGOURL)
 
 const db = mongoose.connection;
 
