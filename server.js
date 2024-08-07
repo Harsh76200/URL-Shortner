@@ -17,7 +17,7 @@ db.on('error',()=>{
       console.log('Eror');
 })
 db.once('open',()=>{
-    console.log("Connected");
+    console.log("Mongodb yConnected");
 })
 
 app.set('view engine' ,'ejs')
